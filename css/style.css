@@ -1,0 +1,264 @@
+:root {
+    --main-color: #e84118;
+    --white: #f5f6fa;
+    --dark-gray: #2f3640;
+    --soft-gray: #7f8c8d;
+    --facebook: #1877f2;
+    --twitter: #1da1f2;
+    --google: #ea4335;
+    --youtube: #ff0000;
+    --font-size: 16px;
+}
+
+nav .logo {
+    color: var(--white) !important;
+}
+
+header nav .menu a {
+    color: var(--white) !important;
+}
+
+nav .logo span {
+    color: var(--main-color);
+}
+
+header {
+    background: rgba(30, 29, 29, 0.5) url(../imgs/slide-1.jpg);
+    background-blend-mode: darken;
+    height: 80vh;
+    background-size: cover;
+}
+
+
+/* start header caption */
+
+header .caption h1 {
+    font-size: calc(var(--font-size) + 40px);
+    font-weight: bold;
+}
+
+header .caption {
+    color: var(--white);
+}
+
+header .caption a {
+    color: var(--white);
+}
+
+header .caption span {
+    color: var(--main-color);
+}
+
+
+/* start feature styling */
+
+.feature .box div {
+    width: 8vw;
+    height: 17vh;
+    margin: auto;
+    color: var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.feature .box div:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+/* ============================== start our work styling ========================= */
+
+.caption span {
+    color: var(--main-color);
+}
+
+.caption p {
+    width: 40%;
+}
+
+.our-work .work {
+    border: 1px solid var(--soft-gray);
+    color: var(--soft-gray);
+}
+
+.our-work img {
+    width: 100%;
+    height: 100%;
+}
+
+.our-work .desc {
+    background-color: rgba(56, 55, 54, 0.4);
+    height: 100%;
+    width: 100%;
+    color: var(--white);
+    padding-top: 10%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.our-work .desc:hover {
+    /* background-color: rgba(56, 55, 54, 0.4); */
+    opacity: 100%;
+}
+
+.our-work .desc p {
+    font-size: calc(var(--font-size) + 2px);
+}
+
+.our-work .desc button {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+
+/* ============================== start our team styling ========================= */
+
+.our-team .team img {
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.our-team .team img~.icons .fa-facebook {
+    transition: all 0.3s ease-in-out;
+}
+
+.our-team .team img~.icons .fa-google {
+    transition: all 0.3s ease-in-out;
+}
+
+.our-team .team img~.icons .fa-youtube {
+    transition: all 0.3s ease-in-out;
+}
+
+.our-team .team img~.icons .fa-twitter {
+    transition: all 0.3s ease-in-out;
+}
+
+.our-team .team {
+    color: var(--soft-gray);
+}
+
+.our-team .team img {
+    height: 30vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.our-team .team img:hover {
+    filter: grayscale(0%);
+}
+
+.our-team .team img:hover~.icons .fa-facebook {
+    color: var(--facebook);
+}
+
+.our-team .team img:hover~.icons .fa-google {
+    color: var(--google);
+}
+
+.our-team .team img:hover~.icons .fa-youtube {
+    color: var(--youtube);
+}
+
+.our-team .team img:hover~.icons .fa-twitter {
+    color: var(--twitter);
+}
+
+
+/* ============================== start contact-us styling ========================= */
+
+.contact-us .icons {
+    font-size: calc(var(--font-size) + 5px);
+}
+
+.contact-us {
+    background-image: url(../imgs/contact-bg.jpg);
+    height: 70vh;
+    z-index: 0;
+}
+
+.contact-us .overlay {
+    background-color: #272c34;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact-us form input,
+.contact-us form textarea {
+    background: transparent;
+}
+
+.contact-us form input::placeholder,
+.contact-us form textarea::placeholder {
+    color: var(--white) !important;
+}
+
+.contact-us button {
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.contact-us button:focus,
+.contact-us button:hover {
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    color: var(--main-color);
+}
+
+.contact-us .icons .fa-facebook {
+    color: var(--facebook)
+}
+
+.contact-us .icons .fa-twitter {
+    color: var(--twitter)
+}
+
+.contact-us .icons .fa-google {
+    color: var(--google)
+}
+
+.contact-us .icons .fa-youtube {
+    color: var(--youtube)
+}
+
+.contact-us .caption p {
+    color: var(--soft-gray)
+}
+
+.contact-us .caption h3 {
+    color: var(--white)
+}
+
+
+/*====================================  start footer =========================== */
+
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+header .sticki {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    height: 10vh;
+    z-index: 1;
+}
+
+.scrollButton {
+    position: fixed;
+    bottom: 10%;
+    z-index: 1;
+    margin-right: 20px;
+    font-size: 20px;
+    display: block;
+    right: 0;
+}
+
+.hideButton {
+    display: none;
+}
